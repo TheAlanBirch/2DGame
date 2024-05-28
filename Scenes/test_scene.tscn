@@ -1,0 +1,50 @@
+[gd_scene load_steps=3 format=3 uid="uid://ck4kjulnduyse"]
+
+[ext_resource type="PackedScene" uid="uid://dolyxa1oj6be8" path="res://Scenes/tile_map_test.tscn" id="1_qoq73"]
+[ext_resource type="PackedScene" uid="uid://b8xgy0af345eu" path="res://Scenes/knight.tscn" id="2_06b78"]
+
+[node name="test_scene" type="Node2D"]
+
+[node name="TileMapTest" parent="." instance=ExtResource("1_qoq73")]
+position = Vector2(-504, -32)
+
+[node name="BlueKnights" type="Node2D" parent="."]
+
+[node name="Knight" parent="BlueKnights" instance=ExtResource("2_06b78")]
+z_index = 10
+position = Vector2(978, 266)
+
+[node name="Knight2" parent="BlueKnights" instance=ExtResource("2_06b78")]
+z_index = 10
+position = Vector2(482, 324)
+
+[node name="Knight7" parent="BlueKnights" instance=ExtResource("2_06b78")]
+z_index = 10
+position = Vector2(-89, 199)
+
+[node name="Knight3" parent="BlueKnights" instance=ExtResource("2_06b78")]
+z_index = 10
+position = Vector2(836, 501)
+
+[node name="Knight6" parent="BlueKnights" instance=ExtResource("2_06b78")]
+z_index = 10
+position = Vector2(-22, 519)
+
+[node name="Knight8" parent="BlueKnights" instance=ExtResource("2_06b78")]
+z_index = 10
+position = Vector2(-340, 393)
+
+[node name="Knight9" parent="BlueKnights" instance=ExtResource("2_06b78")]
+z_index = 10
+position = Vector2(-268, 264)
+
+[node name="Knight10" parent="BlueKnights" instance=ExtResource("2_06b78")]
+position = Vector2(-400, 518)
+
+[node name="Knight4" parent="BlueKnights" instance=ExtResource("2_06b78")]
+z_index = 10
+position = Vector2(690, 383)
+
+[node name="Knight5" parent="BlueKnights" instance=ExtResource("2_06b78")]
+z_index = 10
+position = Vector2(128, 335)

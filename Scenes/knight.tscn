@@ -1,0 +1,66 @@
+[gd_scene load_steps=9 format=3 uid="uid://b8xgy0af345eu"]
+
+[ext_resource type="Texture2D" uid="uid://db5m4poebnvhk" path="res://Assets/Factions/Knights/Troops/Warrior/Blue/Warrior_Blue.png" id="1_p6i56"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uwdv3"]
+atlas = ExtResource("1_p6i56")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lg3sb"]
+atlas = ExtResource("1_p6i56")
+region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3eb4h"]
+atlas = ExtResource("1_p6i56")
+region = Rect2(384, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_340p1"]
+atlas = ExtResource("1_p6i56")
+region = Rect2(576, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d0eru"]
+atlas = ExtResource("1_p6i56")
+region = Rect2(768, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pjxfg"]
+atlas = ExtResource("1_p6i56")
+region = Rect2(960, 0, 192, 192)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3qjpj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uwdv3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lg3sb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3eb4h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_340p1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d0eru")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pjxfg")
+}],
+"loop": true,
+"name": &"blue_idle",
+"speed": 10.0
+}]
+
+[node name="Knight" type="Node2D"]
+z_index = 15
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -32)
+sprite_frames = SubResource("SpriteFrames_3qjpj")
+animation = &"blue_idle"
+autoplay = "blue_idle"
+frame = 5
+frame_progress = 0.701366
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
